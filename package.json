@@ -1,0 +1,23 @@
+{
+  "name": "introreactjs2",
+  "version": "1.0.0",
+  "description": "Intro to ReactJS part 2 =======================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimvang8790/introReactJSpart2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimvang8790/introReactJSpart2/issues"
+  },
+  "homepage": "https://github.com/jimvang8790/introReactJSpart2#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
