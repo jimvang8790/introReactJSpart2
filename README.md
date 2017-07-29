@@ -7,3 +7,9 @@ Why learn ReactJS?
 ------------------
 
 ReactJS presents graceful solutions to some of front-end programming's most persistent issues. It's fast, scalable, flexible, powerful, and has a robust developer community that's rapidly growing. There's never been a better time to learn React.
+
+npm Install
+-----------
+
+npm install --save react
+npm install --save react-dom
