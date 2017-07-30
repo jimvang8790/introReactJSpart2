@@ -48,3 +48,17 @@ class ParentClass extends React.Component {
 }
 
 ```
+
+Child
+-----
+
+Child had two jobs:
+1. Child displayed a name.
+2. Child offered a way to change that name.
+
+Patterns within patterns within patterns!
+-----------------------------------------
+
+In lesson 2, you learned that lesson 1's pattern is actually part of a larger pattern: a stateful, parent component passes down an event handler to a stateless, child component. The child component then uses that event handler to update its parent's state.
+
+A child component updates its parent's state, and the parent passes that state to a sibling component.
