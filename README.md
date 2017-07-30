@@ -13,3 +13,38 @@ npm Install
 
 npm install --save react
 npm install --save react-dom
+
+Stateless Child
+---------------
+
+The stateless, child component will update the state of the parent component.
+
+1. The parent component class defines a method that calls this.setState(). For an example, look in Step1.js at the .handleClick() method.
+2. The parent component binds the newly-defined method to the current instance of the component in its constructor. This ensures that when we pass the method to the child component, it will still update the parent component. For an example, look in Step2.js at the end of the constructor() method.
+3. Once the parent has defined a method that updates its state and bound to it, the parent then passes that method down to a child. Look in Step2.js, at the prop
+4. The child receives the passed-down function, and uses it as an event handler. Look in Step3.js. When a user clicks on the <button></button>, a click event will fire. This will make the passed-down function get called, which will update the parent's state.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ChildClass } from './ChildClass';
+
+class ParentClass extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { totalClicks: 0 };
+  }
+
+  handleClick() {
+    const total = this.state.totalClicks;
+
+    // calling handleClick will
+    // result in a state change:
+    this.setState(
+      { totalClicks: total + 1 }
+    );
+  }
+}
+
+```
