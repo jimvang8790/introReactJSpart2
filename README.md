@@ -96,3 +96,25 @@ Validation can ensure that your props are doing what they're supposed to be doin
 This is useful, but reason #2 is arguably more useful: documentation.
 
 Documenting props makes it easier to glance at a file and quickly understand the component class inside. When you have a lot of files, and you will, this can be a huge benefit.
+
+React Form
+----------
+
+In a React form, you want the server to know about every new character or deletion, as soon as it happens. That way, your screen will always be in sync with the rest of your application.
+
+Controlled vs Uncontrolled
+--------------------------
+
+React forms: controlled component and uncontrolled component.
+An uncontrolled component is a component that maintains its own internal state.
+A controlled component is a component that does not maintain any internal state.
+
+```
+let input = document.querySelector('input[type="text"]');
+
+let typedText = input.value; // input.value will be equal to whatever text is currently in the text box.
+
+```
+The important thing here is that the <input /> keeps track of its own text. You can ask it what its text is at any time, and it will be able to tell you.
+The fact that <input /> keeps track of information makes it an uncontrolled component. It maintains its own internal state, by remembering data about itself.
+A controlled component, on the other hand, has no memory. If you ask it for information about itself, then it will have to get that information through props. Most React components are controlled.
