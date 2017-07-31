@@ -72,3 +72,4 @@ dividing components into presentational components and container components.
 
 separating presentational components from display components
 ------------------------------------------------------------
+Separating container components from presentational components helps to answer that question. It shows you when it might be a good time to divide a component into smaller components. It also shows you how to perform that division.
