@@ -129,3 +129,44 @@ You can write a lifecycle method that gets called right before a component rende
 You can write a lifecycle method that gets called right after a component renders, every time except for the first time.
 
 You can attach lifecycle methods to a lot of different moments in a component's life. This has powerful implications!
+
+Updating Lifecycle Methods
+---------------------------
+
+updating and unmounting lifecycle methods
+
+What is updating?
+
+The first time that a component instance renders, it does not update. A component updates every time that it renders, starting with the second render.
+
+There are five updating lifecycle methods:
+
+1. componentWillReceiveProps
+2. shouldComponentUpdate
+3. componentWillUpdate
+4. render
+5. componentDidUpdate
+
+Whenever a component instance updates, it automatically calls all five of these methods, in order.
+
+componentWillReceiveProps
+-------------------------
+
+When a component instance updates, componentWillReceiveProps gets called before the rendering begins.
+
+As one might expect, componentWillReceiveProps only gets called if the component will receive props:
+
+```
+// componentWillReceiveProps will get called here:
+ReactDOM.render(
+  <Example prop="myVal" />,
+  document.getElementById('app')
+);
+
+// componentWillReceiveProps will NOT get called here:
+ReactDOM.render(
+  <Example />,
+  document.getElementById('app')
+);
+
+```
