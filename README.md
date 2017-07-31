@@ -73,3 +73,26 @@ dividing components into presentational components and container components.
 separating presentational components from display components
 ------------------------------------------------------------
 Separating container components from presentational components helps to answer that question. It shows you when it might be a good time to divide a component into smaller components. It also shows you how to perform that division.
+
+A component class written as a function is called a stateless functional component. Stateless functional components have some advantages over typical component classes. We'll cover those advantages in this lesson.
+
+Stateless functional components usually have props passed to them.
+
+To access these props, give your stateless functional component a parameter. This parameter will automatically be equal to the component's props object.
+
+It's customary to name this parameter props
+
+Not only are stateless functional components more concise, but they will subtly influence how you think about components in a positive way. They emphasize the fact that components are basically functions! A component takes two optional inputs, props and state, and outputs HTML and/or other components.
+
+Validation
+----------
+
+In this lesson, you will learn to use an important React feature called propTypes.
+
+propTypes are useful for two reasons. The first reason is prop validation.
+
+Validation can ensure that your props are doing what they're supposed to be doing. If props are missing, or if they're present but they aren't what you're expecting, then a warning will print in the console.
+
+This is useful, but reason #2 is arguably more useful: documentation.
+
+Documenting props makes it easier to glance at a file and quickly understand the component class inside. When you have a lot of files, and you will, this can be a huge benefit.
