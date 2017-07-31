@@ -62,3 +62,13 @@ Patterns within patterns within patterns!
 In lesson 2, you learned that lesson 1's pattern is actually part of a larger pattern: a stateful, parent component passes down an event handler to a stateless, child component. The child component then uses that event handler to update its parent's state.
 
 A child component updates its parent's state, and the parent passes that state to a sibling component.
+
+React programmers are expected to know
+--------------------------------------
+
+make a stateless functional component, how to make a propType, how to write a form, and how to use styles
+
+dividing components into presentational components and container components.
+
+separating presentational components from display components
+------------------------------------------------------------
