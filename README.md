@@ -118,3 +118,14 @@ let typedText = input.value; // input.value will be equal to whatever text is cu
 The important thing here is that the <input /> keeps track of its own text. You can ask it what its text is at any time, and it will be able to tell you.
 The fact that <input /> keeps track of information makes it an uncontrolled component. It maintains its own internal state, by remembering data about itself.
 A controlled component, on the other hand, has no memory. If you ask it for information about itself, then it will have to get that information through props. Most React components are controlled.
+
+Lifecycle methods
+-----------------
+
+Lifecycle methods are methods that get called at certain moments in a component's life.
+
+You can write a lifecycle method that gets called right before a component renders for the first time.
+
+You can write a lifecycle method that gets called right after a component renders, every time except for the first time.
+
+You can attach lifecycle methods to a lot of different moments in a component's life. This has powerful implications!
